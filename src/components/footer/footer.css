@@ -62,3 +62,18 @@
         font-size: 1rem;
     }
 }
+
+@media screen and (max-width: 480) {
+    .footer__social-link {
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+    }
+
+    .nav__toggle {
+        position: absolute;
+        top: 4%;
+        /* Or use position: fixed; for a fixed position even when scrolling */
+      }
+
+}

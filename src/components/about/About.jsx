@@ -10,13 +10,14 @@ const About = () => {
         <h2 className="section__title">About Me</h2>
         <span className="section__subtitle">A short introduction</span>
         <div className="about__container container grid">
-            <img src={AboutImg} alt="about" className="about__img" />
+        <p className="about__text">
+        Originally from the Czech Republic, I am currently living in Luxembourg and studying at the European School of Luxembourg II. <br></br> <br></br>Despite being just 16 years old, I have developed strong foundation in front-end software development, along with some skills in the back-end. <br></br> <br></br>I am proficient in Python and have a good understanding of JavaScript. I am also familiar with frameworks such as React, Node.js, and Django.
+                </p>
             <div className="about__data">
                 <Info />
-                <p className="about__description">
-                    I create applications highlighting minimal design and friendly UI/UX interfaces.
-                </p>
-                <a download="" href={CV} className="button button--flex">
+    
+
+                <a download="" href={CV} className="button button--flex" class="cv__button">
                     Download CV
                     <svg
                         class="button__icon"

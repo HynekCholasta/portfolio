@@ -29,7 +29,7 @@ const Services = () => {
                         <HiX onClick={() => toggleTab(0)} className="services__modal-close" />
                         <h3 className="services__modal-title">Developer</h3>
                         <p className="services__modal-description">
-                            Over 3 years of experience in web development providing quality work.
+                        Enthusiastic Web Developer dedicated to delivering high-quality user experiences.
                         </p>
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
@@ -58,7 +58,7 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <HiOutlineClipboardList className="services__icon" />
-                    <h3 className="services__title">UI/UX<br />Designer</h3>
+                    <h3 className="services__title">Bot<br />Developer</h3>
                 </div>
                 <span className="services__button" onClick={() => toggleTab(2)}>
                     View More
@@ -69,25 +69,25 @@ const Services = () => {
                         <HiX onClick={() => toggleTab(0)} className="services__modal-close" />
                         <h3 className="services__modal-title">Designer</h3>
                         <p className="services__modal-description">
-                            Over 2 years of experience in UI/UX design providing quality work.
+                        Skilled in developing and maintaining web app bots, with a strong focus on quality and efficiency.
                         </p>
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <HiOutlineCheckCircle className="services__modal-icon" />
                                 <p className="services__modal-info">
-                                    Create a user friendly interface
+                                Building efficient checkout automation bots
                                 </p>
                             </li>
                             <li className="services__modal-service">
                                 <HiOutlineCheckCircle className="services__modal-icon" />
                                 <p className="services__modal-info">
-                                    Develop with a minimal approach
+                                Create automated bots for scheduled social media posts.
                                 </p>
                             </li>
                             <li className="services__modal-service">
                                 <HiOutlineCheckCircle className="services__modal-icon" />
                                 <p className="services__modal-info">
-                                    Design with accessibility in mind
+                                    Design with efficiency in mind
                                 </p>
                             </li>
                         </ul>

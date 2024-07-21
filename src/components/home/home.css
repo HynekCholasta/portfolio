@@ -1,18 +1,39 @@
-.home__container {
-    row-gap: 7rem;
+.home__title {
+    font-size: 770%;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+    line-height: 0.8;
+    white-space: wrap;
+    text-align: left;
 }
 
-.home__content {
-    grid-template-columns: 116px repeat(2, 1fr);
-    padding-top: 5.5rem;
-    column-gap: 2rem;
-    align-items: center;
+.home__subtitle {
+    position: relative;
+    font-size: 400%;
+    padding-left: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 0.8;
+    margin-bottom: var(--mb-1);
+    white-space: nowrap;
+    color: rgb(116, 116, 116);
+}
+
+.home__description {
+    margin-bottom: var(--mb-3);
+    position: relative;
+    padding-left: 20rem;
+    font-size: 30px;
+    color: black;
+    white-space: nowrap;
 }
 
 .home__social {
-    display: grid;
+    position: relative;
+    display: absolute;
+    height: 100%;
     grid-template-columns: max-content;
-    row-gap: 1rem;
+    row-gap: 0.8rem;
 }
 
 .home__social-icon {
@@ -20,42 +41,250 @@
     color: var(--title-color);
 }
 
+@media (max-width: 1200px) {
+    .home__title {
+        font-size: 100px;
+    }
+    .home__subtitle {
+        font-size: 60px;
+        padding-left: 2rem;
+    }
+    .home__description {
+        padding-left: 200px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home__content {
+        grid-template-columns: 100px repeat(2, 1fr);
+        column-gap: 1.25rem;
+    }
+
+    .home__hand {
+        width: 26px;
+        height: 26px;
+    }
+
+    .home__title {
+        font-size: 80px; /* Adjusted font size */
+    }
+
+    .home__subtitle {
+        font-size: 50px; /* Adjusted font size */
+        padding-left: 1.5rem;
+    }
+
+    .home__img {
+        width: 250px;
+        height: 250px;
+        box-shadow: inset 0 0 0 8px rgb(225 225 225 / 30%);
+    }
+
+    .home__scroll {
+        margin-left: 7.5rem;
+    }
+
+    .home_social {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home__content {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: -100%;
+    }
+
+    .home__title {
+        font-size: 700%; /* Adjusted font size */
+        position: relative;
+        right: 300%;
+        bottom: 50%;
+    }
+
+    .home__subtitle {
+        font-size: 400%; /* Adjusted font size */
+    }
+
+    .home__description {
+        white-space: nowrap;
+        /* Optional: Add ellipsis for overflowed text */
+        font-size: 150%;
+        margin-left: -1100%;
+      }
+
+    .home__img {
+        order: initial;
+        justify-self: initial;
+        box-shadow: inset 0 0 0 6px rgb(225 225 225 / 30%);
+        width: 200px;
+        height: 200px;
+    }
+
+    .home__data {
+        grid-column: 1;
+    }
+
+    .home__scroll {
+        display: none;
+    }
+
+    .home__social {
+        display: none;
+    }
+
+    .home__content {
+        position: relative;
+        bottom: 17%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home__title {
+        font-size: 600%; /* Adjusted font size */
+        position: relative;
+        right: 300%;
+    }
+    
+
+    .home__subtitle {
+        font-size: 300%; /* Adjusted font size */
+        position: relative;
+        right: 300%;
+    }
+
+    .home__description {
+        font-size: 100%; /* Adjusted font size */
+        position: relative;
+        right: 200%;
+      }
+    
+    .button {
+        position: relative;
+        right: 300%;
+        size: 0rem;
+    }
+
+    .home__content {
+        position: relative;
+        bottom: 20%;
+    }
+
+    
+}
+
+@media screen and (max-width: 440px) {
+    .home__title {
+        font-size: 600%; /* Adjusted font size */
+        text-align: left; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__subtitle {
+        font-size: 250%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__description {
+        font-size: 100%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .home__title {
+        font-size: 500%; /* Adjusted font size */
+        text-align: left; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__subtitle {
+        font-size: 250%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__description {
+        font-size: 80%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home__title {
+        font-size: 400%; /* Adjusted font size */
+        text-align: left; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 0rem 0rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__subtitle {
+        font-size: 200%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    .home__description {
+        font-size: 80%; /* Adjusted font size */
+        text-align: center; /* Align text to the center */
+        margin: 0 auto; /* Center the element itself */
+        width: 90%; /* Ensure the element takes full width */
+        max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
+        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+    }
+
+    . button button--flex {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.home__container {
+    row-gap: 7rem;
+}
+
+.home__content {
+    grid-template-columns: 20px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    padding-left: 0%;
+    align-items: center;
+}
+
 .home__social-icon:hover {
     color: var(--title-color-dark);
 }
 
-.home__title {
-    font-size: var(--big-font-size);
-    margin-bottom: var(--mb-0-25);
-}
-
-.home__hand {
-    width: 38px;
-    height: 38px;
-    margin-left: 0.4rem;
-}
-
-.home__subtitle {
-    position: relative;
-    font-size: var(--h3-font-size);
-    padding-left: 5.4rem;
-    font-weight: var(--font-normal);
-    margin-bottom: var(--mb-1);
-}
-
-.home__subtitle::before {
-    content: '';
-    position: absolute;
-    width: 70px;
-    height: 1px;
-    background-color: var(--text-color);
-    left: 0;
-    top: 1rem;
-}
-
-.home__description {
-    max-width: 400px;
-    margin-bottom: var(--mb-3);
+.home__data {
+    display: inline-block;
+    min-height: 200px;
+    position: left;
 }
 
 .home__img {
@@ -98,88 +327,5 @@
     }
     30% {
         transform: translateY(3.75rem);
-    }
-}
-
-.home__scroll-name {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    margin-right: var(--mb-0-25);
-    margin-left: 2px;
-}
-
-.home__scroll-arrow {
-    font-size: 1.25rem;
-    color: var(--title-color);
-}
-
-/* BREAK POINTS */
-@media screen and (max-width: 992px) {
-    .home__content {
-        grid-template-columns: 100px repeat(2, 1fr);
-        column-gap: 1.25rem;
-    }
-
-    .home__hand {
-        width: 26px;
-        height: 26px;
-    }
-
-    .home__subtitle {
-        padding-left: 3.75rem;
-        margin-bottom: var(--mb-1);
-    }
-
-    .home__subtitle::before {
-        width: 42px;
-        top: 0.8rem;
-    }
-    
-    .home__description {
-        max-width: initial;
-        margin-bottom: var(--mb-2-5);
-    }
-
-    .home__img {
-        width: 250px;
-        height: 250px;
-        box-shadow: inset 0 0 0 8px rgb(225 225 225 / 30%);
-    }
-
-    .home__scroll {
-        margin-left: 7.5rem;
-    }
-}
-@media screen and (max-width: 768px) {
-    .home__content {
-        grid-template-columns: 0.5fr 3fr;
-        padding-top: 3.5rem;
-    }
-
-    .home__img {
-        order: initial;
-        justify-self: initial;
-        box-shadow: inset 0 0 0 6px rgb(225 225 225 / 30%);
-        width: 200px;
-        height: 200px;
-    }
-
-    .home__data {
-        grid-column: 1/3;
-    }
-
-    .home__scroll {
-        display: none;
-    }
-}
-@media screen and (max-width: 350px) {
-    .home__img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .home__hand {
-        width: 22px;
-        height: 22px;
     }
 }
