@@ -159,8 +159,8 @@
         color: black;
         font-size: 80%;
         text-align: left; /* Align text to the center */
-        margin: 0 auto; /* Center the element itself */
-        width: 90%; /* Ensure the element takes full width */
+        margin: 0rem 0rem; /* Center the element itself */
+        width: 100%; /* Ensure the element takes full width */
         max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
         padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
     }
@@ -172,5 +172,10 @@
     .cv__button {
         padding: 0.75rem 3rem; /* Further adjust the padding to make the button smaller */
         font-size: 85%; /* Optional: Adjust font size to better fit the smaller button */
+    }
+
+    .about.about.section {
+        padding: 0;
+        margin-bottom: 0;
     }
 }

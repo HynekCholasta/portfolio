@@ -260,10 +260,15 @@
         padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
     }
 
-    . button button--flex {
+    .button button--flex {
         height: 20px;
         width: 20px;
     }
+
+    .home.section {
+        margin-bottom: -6rem;
+    }
+
 }
 
 .home__container {
