@@ -4,7 +4,9 @@ const Data = () => {
   return (
     <div className='home__data'>
         <h1 className="home__title">
+            <div className='title'>
             Welcome to my <br></br>portfolio
+            </div>
         </h1>
         <h3 className="home__subtitle">
         Info

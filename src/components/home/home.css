@@ -7,6 +7,19 @@
     text-align: left;
 }
 
+.title {
+    font-size: 120%;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+    line-height: 0.8;
+    white-space: wrap;
+    text-align: left;
+}
+
+.home.section {
+    margin-bottom: 10%;
+}
+
 .home__subtitle {
     position: relative;
     font-size: 400%;

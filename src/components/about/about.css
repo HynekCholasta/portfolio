@@ -4,6 +4,11 @@
     column-gap: 4rem;
 }
 
+.about__textbox {
+    grid-column: 1 / span 2;
+    margin: 0%;
+}
+
 .about__img {
     width: 350px;
     border-radius: 1.5rem;
@@ -42,6 +47,13 @@
 .about__title {
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
+    
+}
+
+.section__title {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
 }
 
 .about__subtitle {
@@ -53,7 +65,7 @@
 }
 
 .about__description {
-    padding: 0 4rem 0 0;
+    padding: 0 -0%  0;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -109,6 +121,8 @@
         padding: 0;
     }
     
+    
+
     .about__text {
         color: black;
         font-size: 100%;
@@ -125,14 +139,20 @@
         row-gap: 2.5rem;
     }
 
+    .section__title {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 4rem;
+    }
+
     .about__text {
-        color: black;
-        font-size: 90%;
-        text-align: left; /* Align text to the center */
-        margin: 0 auto; /* Center the element itself */
-        width: 90%; /* Ensure the element takes full width */
-        max-width: 350px; /* Set a maximum width to prevent text from spreading too much */
-        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+            color: black;
+            font-size: 80%;
+            text-align: left; /* Align text to the center */
+            margin: 0rem 0rem; /* Center the element itself */
+            width: 120%; /* Ensure the element takes full width */
+            max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
+            padding: 1rem 0rem; /* Adjust padding to fit smaller screens */
     }
 
     .about {
@@ -160,9 +180,9 @@
         font-size: 80%;
         text-align: left; /* Align text to the center */
         margin: 0rem 0rem; /* Center the element itself */
-        width: 100%; /* Ensure the element takes full width */
+        width: 120%; /* Ensure the element takes full width */
         max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
-        padding: 1rem 2rem; /* Adjust padding to fit smaller screens */
+        padding: 1rem 0rem; /* Adjust padding to fit smaller screens */
     }
 
     .about {
@@ -177,5 +197,10 @@
     .about.about.section {
         padding: 0;
         margin-bottom: 0;
+    }
+
+    .section__title {
+        text-align: right;
+        column-gap: 4rem;
     }
 }

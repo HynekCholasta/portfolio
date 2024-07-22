@@ -156,9 +156,7 @@
     }
 
     .nav__close {
-        position: absolute;
-        right: 1.3rem;
-        bottom: .5rem;
+        align-items: flex-end;
         font-size: 1.5rem;
         cursor: pointer;
         color: var(--title-color);
