@@ -147,16 +147,15 @@
 
     .about__text {
             color: black;
-            font-size: 80%;
+            font-size: 88%;
             text-align: left; /* Align text to the center */
             margin: 0rem 0rem; /* Center the element itself */
-            width: 120%; /* Ensure the element takes full width */
             max-width: 320px; /* Set a maximum width to prevent text from spreading too much */
-            padding: 1rem 0rem; /* Adjust padding to fit smaller screens */
+            padding: 1rem; /* Adjust padding to fit smaller screens */
     }
 
     .about {
-        padding: 0 1rem;
+        padding: 0 ;
     }
 
     .cv__button {

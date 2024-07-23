@@ -170,7 +170,7 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    body {
+    .container {
         margin: 00 var(--header-height) 0;
     }
     .section {
