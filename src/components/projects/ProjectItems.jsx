@@ -1,16 +1,26 @@
-import React from 'react';
-import { HiOutlineArrowSmRight } from "react-icons/hi";
+import { HiOutlineArrowSmRight } from 'react-icons/hi';
+import './ProjectItems.css';
 
-const ProjectItems = ({item}) => {
-  return (
+const ProjectItems = ({ item, isModalOpen, toggleModal }) => {
+    return (
         <div className="project__card" key={item.id}>
             <img className="project__img" src={item.image} alt="" />
             <h3 className="project__title">{item.title}</h3>
-            <a href="#" className="project__button">
+            <button onClick={toggleModal} className="project__button">
                 Demo <HiOutlineArrowSmRight className="project__button-icon" />
-            </a>
+            </button>
+            {isModalOpen && (
+                <div className="modal">
+                    <div className="overlay" onClick={toggleModal}></div>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <h2>{item.title}</h2>
+                        <p>{item.modalContent}</p>
+                        <button className="close-modal" onClick={toggleModal}>CLOSE</button>
+                    </div>
+                </div>
+            )}
         </div>
     );
-}
+};
 
 export default ProjectItems;

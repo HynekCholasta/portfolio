@@ -33,11 +33,11 @@ const Qualification = () => {
                     : "qualification__content"}>
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">Design</h3>
-                            <span className="qualification__subtitle">The Art Institute</span>
+                            <h3 className="qualification__title">ICT subject</h3>
+                            <span className="qualification__subtitle">European School of Luxembourg II</span>
                             <div className="qualification__calendar">
                                 <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2016-2018
+                                2019-2022
                             </div>
                         </div>
                         <div>
@@ -52,21 +52,21 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                         <div>
-                            <h3 className="qualification__title">Web Development</h3>
-                            <span className="qualification__subtitle">Full Sail University</span>
+                            <h3 className="qualification__title">Self-taught</h3>
+                            <span className="qualification__subtitle">YouTube + Courses</span>
                             <div className="qualification__calendar">
                                 <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2018-2021
+                                2022-2023
                             </div>
                         </div>
                     </div>
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">UI/UX Design</h3>
-                            <span className="qualification__subtitle">UX Academy</span>
+                            <h3 className="qualification__title">IBM full-stack software developer certificate</h3>
+                            <span className="qualification__subtitle">Coursera</span>
                             <div className="qualification__calendar">
                                 <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2021-2022
+                                2024
                             </div>
                         </div>
                         <div>
@@ -79,11 +79,11 @@ const Qualification = () => {
                     : "qualification__content"}>
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">Tech Support</h3>
-                            <span className="qualification__subtitle">PC Outlet</span>
+                            <h3 className="qualification__title">Junior Developer</h3>
+                            <span className="qualification__subtitle">Freelance - Remote</span>
                             <div className="qualification__calendar">
                                 <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2012-2015
+                                2024
                             </div>
                         </div>
                         <div>
@@ -91,7 +91,7 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
-                    <div className="qualification__data">
+                    {/* <div className="qualification__data">
                         <div></div>
                         <div>
                             <span className="qualification__rounder"></span>
@@ -134,7 +134,7 @@ const Qualification = () => {
                                 2019-Present
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
