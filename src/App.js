@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 const App = () => {
   return (
     <>
+    <router basename="/portfoio"></router>
       <Header/>
       <main className='main'>
         <Home />
