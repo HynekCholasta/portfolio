@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import "./contact.css";
 import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi"
 import emailjs from '@emailjs/browser';
@@ -9,9 +9,21 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_s53x8mc', 'template_fwq8n7v', form.current, 'cXginQ40keRVEt1YV')
+        emailjs.sendForm('service_uxcz3se', 'template_p0fhjfz', form.current, 'pmDdoVscLhmkU_i9Q')
         e.target.reset();
     };
+
+    const [modal, setModal] = useState(false);
+
+    const toggleModal = () => {
+        setModal(!modal)
+    }
+
+    if(modal) {
+        document.body.classList.add('active-modal')
+    } else {
+        document.body.classList.remove('active-modal')
+    }
   
     return (
     <section className="contact section" id="contact">
@@ -29,7 +41,7 @@ const Contact = () => {
                         <h3 className="contact__card-title">Email</h3>
                         <span className="contact__card-data">cholastahynek6@gmail.com</span>
                         
-                        <a href="mailto:cyphersylph@gmail.com" className="contact__button">
+                        <a href="mailto:cholastahynek6@gmail.com" className="contact__button">
                             Write Me{" "} 
                             <HiOutlineArrowSmRight className="contact__button-icon" />
                         </a>
@@ -43,7 +55,7 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail} className="contact__form">
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Name</label>
-                        <input type="text" name="name" className="contact__form-input" placeholder="Type your name" />
+                        <input type="text" name="from_name" className="contact__form-input" placeholder="Type your name" />
                     </div>
 
                     <div className="contact__form-div">
@@ -53,10 +65,10 @@ const Contact = () => {
 
                     <div className="contact__form-div contact__form-area">
                         <label className="contact__form-tag">Project</label>
-                        <textarea name="project" cols="30" rows="10" className="contact__form-input" placeholder="Provide some project details..."></textarea>
+                        <textarea name="message" cols="30" rows="10" className="contact__form-input" placeholder="Provide some project details..."></textarea>
                     </div>
 
-                    <button href="#contact" className="button button--flex">
+                    <button  onClick={toggleModal} href="#contact" className="button button--flex">
                         Send Message
                         <svg
                             class="button__icon"
@@ -77,6 +89,21 @@ const Contact = () => {
                         </svg>
                     </button>
                 </form>
+                
+                {modal && (
+                    <div className="modal">
+                    <div className="overlay" onClick={toggleModal}></div>
+                    <div className="modal-content">
+                        <h2>Hello Modal</h2>
+                        <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <button className="close" onClick={toggleModal}>CLOSE</button>
+                    </div>
+                </div>
+                )}
+
+                
             </div>
         </div>
     </section>

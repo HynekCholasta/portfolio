@@ -5,6 +5,10 @@
     padding-bottom: 3rem;
 }
 
+.active-modal {
+    overflow-y: hidden;
+}
+
 .contact__title {
     text-align: center;
     font-size: var(--h3-font-size);

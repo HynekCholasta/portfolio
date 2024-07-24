@@ -176,8 +176,9 @@
         font-weight: var(--font-medium);
         font-size: 55px;
         position: fixed; /* Make it fixed to the viewport */
-        top: -8px;
-        left: 90%; /* Adjust as needed */
+        top: 0;
+        right: 0; /* Adjust as needed */
+        left: initial !important; /* Adjust as needed */
         opacity: 1;
     }
 
