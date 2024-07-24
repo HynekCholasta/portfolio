@@ -12,7 +12,7 @@ const Data = () => {
         Info
         </h3>
         <p className="home__description">
-        Hi, I am Hynek a front-end software developer, <br></br>based in the Czech Republic
+        Hi, I am Hynek a front-end software developer, <br></br>based in Luxembourg
         </p>
 
         <a href="#contact" className="button button--flex">
