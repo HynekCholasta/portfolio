@@ -1,8 +1,8 @@
 import Project1 from "../../assets/project1.webp";
-import Project2 from "../../assets/project2.webp";
+// import Project2 from "../../assets/project2.webp";
 import Project3 from "../../assets/project3.webp";
 import threadsBotImg from './threads-bot.JPG';
-import { HiOutlineClipboardList, HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from 'react-icons/hi';
+// import { HiOutlineClipboardList, HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from 'react-icons/hi';
 
 
 export const projectsData = [

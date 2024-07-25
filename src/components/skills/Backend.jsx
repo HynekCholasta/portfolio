@@ -1,5 +1,5 @@
 import React from "react";
-import { HiCheckBadge } from "react-icons/hi2";
+// import { HiCheckBadge } from "react-icons/hi2";
 import { FaPython } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";

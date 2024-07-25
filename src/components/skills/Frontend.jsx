@@ -1,5 +1,5 @@
 import React from "react";
-import { HiCheckBadge } from "react-icons/hi2";
+// import { HiCheckBadge } from "react-icons/hi2";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { BiLogoFlask } from "react-icons/bi";
