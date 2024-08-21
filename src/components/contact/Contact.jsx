@@ -1,30 +1,38 @@
 import React, { useRef, useState } from 'react';
 import "./contact.css";
-import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi"
+import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const form = useRef();
-    
+    const [modal, setModal] = useState(false);
+    const [isSending, setIsSending] = useState(false);
+
     const sendEmail = (e) => {
         e.preventDefault();
-    
+        setIsSending(true);
+
         emailjs.sendForm('service_uxcz3se', 'template_p0fhjfz', form.current, 'pmDdoVscLhmkU_i9Q')
-        e.target.reset();
+            .then((result) => {
+                setIsSending(false);
+                setModal(true);
+                e.target.reset();
+            }, (error) => {
+                setIsSending(false);
+                console.log(error.text);
+            });
     };
 
-    const [modal, setModal] = useState(false);
-
     const toggleModal = () => {
-        setModal(!modal)
+        setModal(!modal);
     }
 
     if(modal) {
-        document.body.classList.add('active-modal')
+        document.body.classList.add('active-contact-modal');
     } else {
-        document.body.classList.remove('active-modal')
+        document.body.classList.remove('active-contact-modal');
     }
-  
+
     return (
     <section className="contact section" id="contact">
         <h2 className="section__title">Let's Connect</h2>
@@ -55,23 +63,23 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail} className="contact__form">
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Name</label>
-                        <input type="text" name="from_name" className="contact__form-input" placeholder="Type your name" />
+                        <input type="text" name="from_name" className="contact__form-input" placeholder="Type your name" required />
                     </div>
 
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Email</label>
-                        <input type="email" name="email" className="contact__form-input" placeholder="Type your email" />
+                        <input type="email" name="email" className="contact__form-input" placeholder="Type your email" required />
                     </div>
 
                     <div className="contact__form-div contact__form-area">
                         <label className="contact__form-tag">Project</label>
-                        <textarea name="message" cols="30" rows="10" className="contact__form-input" placeholder="Provide some project details..."></textarea>
+                        <textarea name="message" cols="30" rows="10" className="contact__form-input" placeholder="Provide some project details..." required></textarea>
                     </div>
 
-                    <button  onClick={toggleModal} href="#contact" className="button button--flex">
-                        Send Message
+                    <button type="submit" className="button button--flex" disabled={isSending}>
+                        {isSending ? 'Sending...' : 'Send Message'}
                         <svg
-                            class="button__icon"
+                            className="button__icon"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -90,19 +98,14 @@ const Contact = () => {
                     </button>
                 </form>
                 
-                {modal && (
-                    <div className="modal">
-                    <div className="overlay" onClick={toggleModal}></div>
-                    <div className="modal-content">
-                        <h2>Hello Modal</h2>
-                        <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <button className="close" onClick={toggleModal}>CLOSE</button>
+                <div className={`contact-modal ${modal ? 'active' : ''}`}>
+                    <div className="contact-modal-overlay" onClick={toggleModal}></div>
+                    <div className="contact-modal-content">
+                        <h2>Thank You!</h2>
+                        <p>Your message has been sent successfully. I'll get back to you soon.</p>
+                        <button className="contact-modal-close" onClick={toggleModal}>CLOSE</button>
                     </div>
                 </div>
-                )}
-
                 
             </div>
         </div>

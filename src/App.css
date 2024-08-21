@@ -196,3 +196,28 @@ img {
     }
 
 }
+
+/* Add this to your App.css */
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+/* App.css */
+
+/* Initial state before scroll */
+/* App.css */
+
+/* Initial state before scroll */
+.scroll-fade-up {
+    opacity: 0;
+    transform: translateY(40px); /* Start from a further distance */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Faster transition */
+  }
+  
+  /* State when the element is visible */
+  .scroll-fade-up.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+  }
+  
