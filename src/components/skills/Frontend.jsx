@@ -2,10 +2,10 @@ import React from "react";
 // import { HiCheckBadge } from "react-icons/hi2";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
-import { BiLogoFlask } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 
 const Frontend = () => {
     return (
@@ -28,10 +28,10 @@ const Frontend = () => {
                         </div>
                     </div>
                     <div className="skills__data">
-                    <BiLogoFlask />
+                    <SiTailwindcss />
                         <div>
-                            <h3 className="skills__name">Flask</h3>
-                            <span className="skills__level">basic</span>
+                            <h3 className="skills__name">TailwindCSS</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 // import Project2 from "../../assets/project2.webp";
-import Project3 from "../../assets/project3.webp";
-import threadsBotImg from './threads-bot.JPG';
 import hjmediaImg from '../../assets/RE_photo_website.JPG';
+import chatbotImg from '../../assets/chatbot.png';
+import threadsBotImg from '../../assets/threads-bot.JPG';
 // import { HiOutlineClipboardList, HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from 'react-icons/hi';
 
 
@@ -61,11 +61,33 @@ export const projectsData = [
     },
     {
         id: 3,
-        image: Project3,
-        title: "Project 3",
+        image: chatbotImg,  // replace with actual image variable if needed
+        title: "Full-Stack Chatbot Web Application",
         category: "C",
-        modalContent: 'This is the content for Project 3'
+        modalContent: {
+            header: 'Full-Stack Chatbot Web Application',
+            description: `
+                <p>I developed a full-stack web application featuring a chatbot, designed to provide seamless user interaction. The application incorporates a login system with Google login support, ensuring secure user access, and stores login data in a SQL database on the backend server. The frontend, built with TailwindCSS, delivers a modern and intuitive user interface.</p>
+                
+                <p><strong>Technologies Used:</strong></p>
+                <ul>
+                    <li><strong>Flask:</strong> For building the backend server and handling user data securely.</li>
+                    <li><strong>React:</strong> To create a responsive and dynamic user interface for chatbot interactions.</li>
+                    <li><strong>TailwindCSS:</strong> For crafting a clean and responsive design with utility-first CSS.</li>
+                    <li><strong>SQL Database:</strong> To securely store user login information.</li>
+                </ul>
+                
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Interactive chatbot with real-time communication.</li>
+                    <li>Secure login system with Google login support.</li>
+                    <li>Efficient data management with a SQL backend.</li>
+                    <li>Tailored frontend design using React and TailwindCSS for a seamless user experience.</li>
+                </ul>
+            `
+        }
     },
+    
 ];
 
 export const projectsNav = [
