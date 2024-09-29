@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.07a0ece8.css",
-    "main.js": "/portfolio/static/js/main.ec01529a.js",
+    "main.css": "/portfolio/static/css/main.b61cba92.css",
+    "main.js": "/portfolio/static/js/main.2df35d27.js",
     "static/media/profileBW.jpeg": "/portfolio/static/media/profileBW.7afa567c43127e8ab65d.jpeg",
     "static/media/threads-bot.JPG": "/portfolio/static/media/threads-bot.b99039e34933b21b5659.JPG",
-    "static/media/project3.webp": "/portfolio/static/media/project3.b094b696f75369270c95.webp",
+    "static/media/chatbot.png": "/portfolio/static/media/chatbot.f6b62c37ee1d369d9255.png",
     "static/media/RE_photo_website.JPG": "/portfolio/static/media/RE_photo_website.05a1db3e713b0d89b22a.JPG",
-    "static/media/Example-Cv.pdf": "/portfolio/static/media/Example-Cv.e83747cf513e0b21a7f1.pdf",
+    "static/media/Hynek_Cholasta_CV.pdf": "/portfolio/static/media/Hynek_Cholasta_CV.4a5979639de0eabb337f.pdf",
     "index.html": "/portfolio/index.html",
-    "main.07a0ece8.css.map": "/portfolio/static/css/main.07a0ece8.css.map",
-    "main.ec01529a.js.map": "/portfolio/static/js/main.ec01529a.js.map"
+    "main.b61cba92.css.map": "/portfolio/static/css/main.b61cba92.css.map",
+    "main.2df35d27.js.map": "/portfolio/static/js/main.2df35d27.js.map"
   },
   "entrypoints": [
-    "static/css/main.07a0ece8.css",
-    "static/js/main.ec01529a.js"
+    "static/css/main.b61cba92.css",
+    "static/js/main.2df35d27.js"
   ]
 }
