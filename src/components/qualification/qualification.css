@@ -20,6 +20,10 @@
     color: var(--title-color-dark);
 }
 
+.qualification__box {
+    padding-top: 20px;
+}
+
 .qualification__icon {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
@@ -53,6 +57,11 @@
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
+.qualification__calendar-icon {
+    vertical-align: top;
+    margin-right: 5px; /* Add space between the icon and text, adjust as needed */
+}
+
 
 .qualification__subtitle {
     display: inline-block;

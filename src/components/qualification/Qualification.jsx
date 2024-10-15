@@ -31,6 +31,7 @@ const Qualification = () => {
             <div className="qualification__sections">
                 <div className={toggleState === 1 ? "qualification__content qualification__content-active"
                     : "qualification__content"}>
+                    <div className="qualification__box">
                     <div className="qualification__data">
                         <div>
                             <h3 className="qualification__title">ICT subject</h3>
@@ -74,9 +75,11 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <div className={toggleState === 2 ? "qualification__content qualification__content-active"
                     : "qualification__content"}>
+                    <div className="qualification__box">
                     <div className="qualification__data">
                         <div>
                             <h3 className="qualification__title">Junior Developer</h3>
@@ -91,22 +94,23 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
-                    {/* <div className="qualification__data">
+                    <div className="qualification__data">
                         <div></div>
                         <div>
                             <span className="qualification__rounder"></span>
                             <span className="qualification__line"></span>
                         </div>
                         <div>
-                            <h3 className="qualification__title">Junior Developer</h3>
-                            <span className="qualification__subtitle">Discord</span>
+                            <h3 className="qualification__title">Javascript Developer</h3>
+                            <span className="qualification__subtitle">Cosup Gaming</span>
                             <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2015-2016
+                                <HiOutlineCalendar className="qualification__calendar-icon"/>
+                                2024-Present
                             </div>
                         </div>
                     </div>
-                    <div className="qualification__data">
+                    </div>
+                    {/* <div className="qualification__data">
                         <div>
                             <h3 className="qualification__title">UX Designer</h3>
                             <span className="qualification__subtitle">Apple Inc</span>
