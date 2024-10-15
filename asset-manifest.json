@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.da33dcc7.css",
-    "main.js": "/portfolio/static/js/main.bc10a303.js",
+    "main.css": "/portfolio/static/css/main.1041f419.css",
+    "main.js": "/portfolio/static/js/main.e4bb1861.js",
     "static/media/profileBW.jpeg": "/portfolio/static/media/profileBW.7afa567c43127e8ab65d.jpeg",
     "static/media/threads-bot.JPG": "/portfolio/static/media/threads-bot.b99039e34933b21b5659.JPG",
     "static/media/chatbot.png": "/portfolio/static/media/chatbot.f6b62c37ee1d369d9255.png",
     "static/media/RE_photo_website.JPG": "/portfolio/static/media/RE_photo_website.05a1db3e713b0d89b22a.JPG",
-    "static/media/Hynek_Cholasta_CV.pdf": "/portfolio/static/media/Hynek_Cholasta_CV.7b310a2427e38613478e.pdf",
+    "static/media/Hynek_Cholasta_CV.pdf": "/portfolio/static/media/Hynek_Cholasta_CV.4a5979639de0eabb337f.pdf",
     "index.html": "/portfolio/index.html",
-    "main.da33dcc7.css.map": "/portfolio/static/css/main.da33dcc7.css.map",
-    "main.bc10a303.js.map": "/portfolio/static/js/main.bc10a303.js.map"
+    "main.1041f419.css.map": "/portfolio/static/css/main.1041f419.css.map",
+    "main.e4bb1861.js.map": "/portfolio/static/js/main.e4bb1861.js.map"
   },
   "entrypoints": [
-    "static/css/main.da33dcc7.css",
-    "static/js/main.bc10a303.js"
+    "static/css/main.1041f419.css",
+    "static/js/main.e4bb1861.js"
   ]
 }
