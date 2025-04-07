@@ -1,7 +1,7 @@
 import React from 'react';
 import "./about.css";
 // import AboutImg from "../../assets/aboutBW.jpeg";
-import CV from "../../assets/Hynek_Cholasta_CV.pdf";
+import CV from "../../assets/Hynek Cholasta - CV.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -14,7 +14,7 @@ const About = () => {
         <div className="about__container container grid">
         <div className='about_textbox'>
         <p className="about__text">
-        Originally from the Czech Republic, I am currently living in Luxembourg and studying at the European School of Luxembourg II. <br></br> <br></br>At 17, I have developed strong foundation in front-end software development, along with some skills in the back-end. <br></br> <br></br>I am proficient in Python and have a good understanding of JavaScript. I am also familiar with frameworks such as React, Node.js, and Django.
+        Originally from the Czech Republic, I am currently living in Luxembourg and studying at the European School of Luxembourg II. <br></br> <br></br>At 17, I have developed a strong foundation in web development, having experience in both front-end and back-end technologies. <br></br> <br></br>I am proficient in Python, JavaScript, and C++, with a solid understanding of web frameworks such as React and Next.js. I can confidently deploy these frameworks on cloud platforms, including AWS.
                 </p>
                 </div>
             <div className="about__data">

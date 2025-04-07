@@ -4,8 +4,8 @@ import { FaPython } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
 import { FaNpm } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
+import { TbBrandCpp } from "react-icons/tb";
+import { FaAws } from "react-icons/fa";
 
 
 const Backend = () => {
@@ -49,18 +49,18 @@ const Backend = () => {
                     </div>
                 </div>
                 <div className="skills__data">
-                <FaNodeJs />
+                <TbBrandCpp />
 
                     <div>
-                        <h3 className="skills__name">Node.js</h3>
+                        <h3 className="skills__name">C++</h3>
                         <span className="skills__level">Basic</span>
                     </div>
                 </div>
                 <div className="skills__data">
-                <FaGitAlt />
+                <FaAws />
 
                     <div>
-                        <h3 className="skills__name">Git</h3>
+                        <h3 className="skills__name">AWS</h3>
                         <span className="skills__level">Intermediate</span>
                     </div>
                 </div>

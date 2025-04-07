@@ -36,7 +36,7 @@ const Home = () => {
                         </div>
                         <h3 className="home__subtitle">Info</h3>
                         <p className="home__description">
-                            Hi, I am Hynek a front-end software developer, <br className="spaced-br" />based in Luxembourg
+                            Hi, I am Hynek a software developer, <br className="spaced-br" />based in Luxembourg
                         </p>
 
                         <a href="#contact" className="button button--flex">
